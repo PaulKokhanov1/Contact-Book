@@ -1,0 +1,13 @@
+<div class="centered-content">
+    <div class="task-list-container" *ngIf="contact">
+        <h1 class="title">
+            Contact Details
+        </h1>
+        <p class="white-text">Name: {{ contact[0].name }}</p>
+        <p class="white-text">Email: {{ contact[0].email }}</p>
+        <p class="white-text">Phone: {{ contact[0].phone }}</p>
+
+        <button class="btn btn-primary" routerLink="../">Back</button>
+        
+    </div>
+</div>

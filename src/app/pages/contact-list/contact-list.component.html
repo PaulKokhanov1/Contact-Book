@@ -1,0 +1,22 @@
+<div class="centered-content">
+    <div class="contact-book-container">
+        <div class="sidebar">
+            <h1 class="title has-text-primary">Contacts</h1>
+            <div class="contact-menu">
+                <a class="contact-menu-item " *ngFor="let contact of contacts" >
+                    <p href="#"  class="white-text-for-list" [routerLink]="['/contacts', contact._id]" routerLinkActive="is-active">
+                        {{ contact.name}}
+                        
+
+                    </p>
+
+                    <span class="pull-right contact-delete btn-rounded-corners" (click)="deleteContact(contact)">X</span>
+                    
+                </a>
+
+                
+            </div>
+                <button class="btn btn-primary btn-rounded-corners" routerLink="/contact-form">Add Contact</button>
+        </div>
+    </div>
+</div>

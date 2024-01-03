@@ -1,0 +1,25 @@
+<div class="centered-content">
+    <div class="modal-box form-group">
+        <h1 class="title">
+            Create a New Contact
+        </h1>
+        <form [formGroup]="FormData" (ngSubmit)="addContact(FormData.value)">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" formControlName="name" class="form-control has-background-light" placeholder="Enter Contact Name">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" formControlName="email" class="form-control has-background-light" placeholder="Enter Contact Email">
+            </div>
+            <div>
+                <label for="phone">Name:</label>
+                <input type="text" id="phone" formControlName="phone" class="form-control has-background-light" placeholder="Enter Contact Phone">
+            </div>
+
+                <button class="btn white-text" routerLink="../">Cancel</button>
+                <button type="submit" class="btn btn-primary" >Add</button>
+
+        </form>
+    </div>
+</div>
